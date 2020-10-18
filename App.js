@@ -5,6 +5,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Welcome from './screens/Welcome';
 import Home from './screens/Home';
 import Menu from './screens/Menu';
+import MenuCurbside from './screens/MenuCurbside';
+import Summary from './screens/Summary';
+import SummaryCurbside from './screens/SummaryCurbside';
 
 const Stack = createStackNavigator();
 
@@ -18,8 +21,11 @@ function App() {
 				}}
 			>
 				<Stack.Screen name="Home" component={Home} />
+				<Stack.Screen name="SummaryCurbside" component={SummaryCurbside} />
+				<Stack.Screen name="Summary" component={Summary} />
 				<Stack.Screen name="Welcome" component={Welcome} />
 				<Stack.Screen name="Menu" component={Menu} />
+				<Stack.Screen name="MenuCurbside" component={MenuCurbside} />
 			</Stack.Navigator>
 		</NavigationContainer>
 	);

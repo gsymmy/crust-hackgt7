@@ -54,13 +54,13 @@ export default class Menu extends Component {
 									</View>
 									<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
 										<TouchableOpacity>
-											<View style={styles.imHolderGreen}>
+											<View style={styles.imHolder}>
 												<Image
 													style={{
 														width: 20,
 														height: 50
 													}}
-													source={require('../media/del-inv.png')}
+													source={require('../media/delivery.png')}
 												/>
 											</View>
 										</TouchableOpacity>
@@ -68,13 +68,13 @@ export default class Menu extends Component {
 									</View>
 									<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
 										<TouchableOpacity>
-											<View style={styles.imHolder}>
+											<View style={styles.imHolderGreen}>
 												<Image
 													style={{
 														width: 50,
 														height: 40
 													}}
-													source={require('../media/curbside.png')}
+													source={require('../media/curbside-inverted.png')}
 												/>
 											</View>
 										</TouchableOpacity>
@@ -400,7 +400,7 @@ export default class Menu extends Component {
 										</TouchableOpacity>
 									</View>
 								</View>
-								<TouchableOpacity onPress={() => this.props.navigation.navigate('Summary')}>
+								<TouchableOpacity onPress={() => this.props.navigation.navigate('SummaryCurbside')}>
 									<View style={styles.login}>
 										<Image
 											style={{

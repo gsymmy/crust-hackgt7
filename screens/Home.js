@@ -101,7 +101,7 @@ export default class Home extends Component {
 									</View>
 									<View style={{ flexDirection: 'row', marginTop: 15 }}>
 										<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-											<TouchableOpacity onPress={() => this.props.navigation.navigate('Menu')}>
+											<TouchableOpacity>
 												<View style={styles.imHolder}>
 													<Image
 														style={{
@@ -115,7 +115,7 @@ export default class Home extends Component {
 											<Text style={{ marginTop: 2, color: 'white', fontSize: 15 }}>Group</Text>
 										</View>
 										<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-											<TouchableOpacity>
+											<TouchableOpacity onPress={() => this.props.navigation.navigate('Menu')}>
 												<View style={styles.imHolder}>
 													<Image
 														style={{
@@ -129,7 +129,9 @@ export default class Home extends Component {
 											<Text style={{ marginTop: 2, color: 'white', fontSize: 15 }}>Delivery</Text>
 										</View>
 										<View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-											<TouchableOpacity>
+											<TouchableOpacity
+												onPress={() => this.props.navigation.navigate('MenuCurbside')}
+											>
 												<View style={styles.imHolder}>
 													<Image
 														style={{
